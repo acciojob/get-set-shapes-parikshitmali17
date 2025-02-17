@@ -4,25 +4,25 @@ class Rectangle {
 		this.width=width;
 		this.height=height;
 	}
-	get width(this.width){
+	get width(){
 		return this._width
 	}
-	get height (this.height){
+	get height (){
 		return this._height 
 	}
-	get Area(){
-		return 2*(this._width*this._height )
+	getArea(){
+		return (this._width*this._height )
 	}
 	
 }
 
 class Square extends Rectangle {
-	constructor (width){
-		super(width,width)
+	constructor (side){
+		super(side,side)
 	}
 
-	get Permiter(width,width){
-		return 2*(this._width +this._width)
+	getPermiter(){
+		return 4*(this._side)
 	}
 }
 
