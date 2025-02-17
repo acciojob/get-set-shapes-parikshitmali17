@@ -1,7 +1,7 @@
 //complete this cobde
 class Rectangle {
 	constructor(width,height){
-		if(width<0 || height<0){
+		if(width<=0 || height<=0){
 			throw new error("width and height must be positive integer")
 		}else{
 			this.width=width;
@@ -23,7 +23,7 @@ class Rectangle {
 
 class Square extends Rectangle {
 	constructor (side){
-		if(side>0){
+		if(side<=0){
 			throw error("side must be positive integer")
 		}
 		super(side,side)
